@@ -1,0 +1,25 @@
+{% extends 'base.template.html' %}
+
+{% block content %}
+<h1>Add a new customer</h1>
+<form method="POST">
+    <div>
+        <label class="form-label">Food Name</label>
+        <input type="text" class="form-control" name="food_name"/>
+    </div>
+    <div>
+        <label class="form-label">Calories</label>
+        <input type="text" class="form-control" name="calories"/>
+    </div>
+    <div>
+        <label class="form-label">Meal Type</label>
+        <input type="text" class="form-control" name="meal"/>
+    </div>
+    <div>
+       <label class="form-label">Date Eaten</label>
+        <input type="text" class="form-control" name="when_eaten"/>
+    </div>
+    <input type="submit" class="btn btn-primary" value="Add Food"/>
+</form>
+
+{% endblock %}
