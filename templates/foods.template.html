@@ -1,0 +1,23 @@
+{% extends 'base.template.html' %}
+
+{% block content %}
+<h1>Food List</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Food Name</th>
+            <th>Calories</th>
+            <th>Meal Type</th>
+            <th>Date Eaten</th> 
+        </tr>
+    </thead>
+    {% for f in foods %}
+    <tr>
+        <td>{{f.food_name}}</td>
+        <td>{{f.calories}}</td>
+        <td>{{f.meal}}</td>
+        <td>{{f.when_eaten}}</td>
+    </tr>
+    {% endfor %}
+</table>
+{%endblock%}
