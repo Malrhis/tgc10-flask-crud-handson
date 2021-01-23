@@ -41,7 +41,7 @@ def process_foods_list_add():
     database.append(new_food)
 
     # save the entire list into the json file. write the file
-    with open('database.json', 'w') as fp:
+    with open('foods.json', 'w') as fp:
         json.dump(database, fp)
 
     return "data received"
